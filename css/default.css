@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FEF159;
+    padding-right: 1%;
+}
+.navbar h1{
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.h1{
+    justify-self: center;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: #FFAF7B;
+}
+@media only screen and (max-width: 700px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar h1{
+        font-size: 25px;
+    }
+    .form{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .contenedor{
+        font-size: 17px;
+    }
+}
